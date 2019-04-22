@@ -1,0 +1,205 @@
+:root{
+  --text-color: rgb(200,200,200);
+  --list-color: rgb(150,150,150);
+  --background-color: rgb(63,63,63);
+  --icon-color:rgb(30,30,30);
+}
+*{
+  font-family: sans-serif;
+  color:var(--text-color);
+}
+html,body{
+  margin:0;
+  height: 100%;
+}
+#header_scrum{
+  background-color: whitesmoke;
+  padding: 10px;
+  /* height: 5%; */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top:0;
+}
+#h2{
+  margin: 0;
+}
+.scrum-table{
+  background-color:var(--background-color);
+  /* height: 90%; */
+  min-height: 100%;
+}
+.base_nav{
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+#add-scrumSection{
+  display: flex;
+}
+/* #modal-container{
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#input-modal{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  position: absolute;
+  background-color: whitesmoke;
+  width:30%;
+}
+#newItem-header{
+  border-bottom: 1px solid black;
+}
+.new-item{
+    margin:10px;
+}
+#h1-newitem{
+  margin:10px;
+}
+#newItem-footer{
+  border-top: 1px solid black;
+} */
+.itemInfo-button{
+  background-color: transparent;
+  border: none;
+}
+.scrum-grid{
+  display:grid;
+  grid-template-columns: 25% 25% 25% 25%;
+    /* overflow-y: scroll; */
+}
+.scrum-grid > div {
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+/* #epics{
+  background-color: #525252;
+}
+#to-do{
+  background-color: #3f3f3f;
+}
+#wip{
+  background-color: #383838;
+}
+#complete{
+  background-color: #323232;
+} */
+.topic-h1{
+  font-size: 20px;
+  margin: 10px;
+}
+.container{
+  max-height: 100% !important;
+}
+#h2{
+  color:black;
+}
+.header-table{
+  /* top:0;
+  left: 0; */
+  position: fixed;
+  width: 25%;
+  display: flex;
+  background-color: rgb(30,30,30);
+  border-bottom:1px solid var(--text-color);
+  margin-bottom: 10px;
+}
+.fill{
+  flex-grow: 1;
+}
+#topic-h1{
+  margin: 0;
+}
+.icon_addsec{
+  background-color: transparent;
+  border:none;
+}
+.addsec{
+  font-size:30px;
+  color:var(--icon-color);
+}
+.icon_add{
+  background-color: transparent;
+  border:none;
+}
+.add-color{
+  color:var(--text-color);
+}
+.modal{
+  margin:7.5% auto;
+  padding: 10px;
+  z-index:10;
+  border-radius:5px;
+  display:none;
+}
+.item{
+  /* display: flex; */
+  background-color: white;
+  /* padding:10px 5px 5px 5px;
+  margin: 5px 0 5px 0; */
+  border-bottom:1px solid var(--list-color);
+  /* margin: 10px; */
+  border-radius: 5px;
+}
+.item-head{
+  background-color: white;
+  padding:10px 5px 5px 5px;
+  border-radius: 5px;
+  margin: 10px;
+}
+.title-itemHead{
+  display: flex;
+}
+.item-content{
+  padding:10px 5px 5px 5px;
+  border:1px black solid;
+  border-radius: 5px;
+  margin: 10px;
+}
+.hide{
+  display: none;
+}
+#checkbox{
+  width: 20px;
+  height: 20px;
+  border-radius: 5PX;
+  background-color: transparent;
+  border: 2px solid var(--list-color);
+}
+.list-title{
+  flex-grow: 1;
+  border-bottom: 2px solid var(--list-color);
+  min-height: 10px;
+  margin-left: 10px;
+}
+.list-content{
+  flex-grow: 1;
+  min-height: 50px;
+}
+.button-style{
+  color: var(--icon-color);
+  background-color: transparent;
+  border: none;
+}
+.more-dots{
+  color: var(--text-color);
+  background-color: transparent;
+  border: none;
+}
+nav{
+  padding: 10px;
+  background-color: black;
+}
+.color{
+  color:var(--icon-color);
+}
